@@ -1,0 +1,57 @@
+REI DO CHURRASCO 2 — INSTALAÇÃO E USO
+
+Arquivo: Rei-do-Churrasco-2-WiFi.apk
+Compatibilidade: Android 8 ou superior.
+
+1. Envie este APK para todos os celulares e abra para instalar.
+   Se o Android pedir, permita instalar aplicativos pela origem usada para abrir o arquivo.
+   Para atualizar a versão anterior, instale por cima. Não desinstale antes, pois isso apaga os dados locais.
+2. Abra o aplicativo, informe nome e apelido e escolha sua foto.
+3. Permita as notificações, se quiser receber lembretes.
+4. Coloque todos os aparelhos na MESMA REDE WI-FI.
+5. No celular criador, abra Grupos e crie o grupo. A sincronização será ativada automaticamente.
+6. Copie o código de seis números. Nos outros celulares, abra Grupos, digite o código e toque em Localizar e entrar.
+7. Use Placar, Churrascos e Fotos. Apenas o administrador altera os pontos.
+   Cada membro pode publicar mensagens/fotos e criar eventos. Apenas autor ou administrador edita/exclui seus itens.
+
+PARA CONTINUAR COMPARTILHANDO
+
+O celular criador guarda os dados do grupo e precisa estar ligado, na mesma rede e com a sincronização ativa.
+O Android mostra uma notificação permanente de sincronização. Ela pode ser parada em Grupos ou na própria notificação.
+Os outros aparelhos também usam essa sincronização para receber eventos em segundo plano.
+Após reiniciar um aparelho ou fechar o aplicativo à força, abra novamente o aplicativo e ative a sincronização em Grupos.
+Sem conexão, os últimos dados recebidos continuam visíveis. Alterações precisam do criador conectado.
+NÃO funciona entre Wi-Fis diferentes. Não usa conta de e-mail, Firebase ou serviço na internet.
+Não desinstale o aplicativo no criador: isso apaga os grupos hospedados. Não há backup na nuvem.
+
+SE O CÓDIGO NÃO ENCONTRAR O GRUPO
+
+- Confira se os aparelhos estão no mesmo Wi-Fi e se a sincronização do criador está ativa.
+- Redes de convidados ou corporativas podem bloquear a comunicação entre aparelhos.
+- Desative VPNs que bloqueiem o acesso à rede local, caso existam.
+- Após muitas tentativas, aguarde 10 minutos.
+- Se dois criadores usarem o mesmo código, um deles deve renovar o código no gerenciador de grupos.
+
+LEMBRETES
+
+Configure os avisos em Perfil: um dia antes, no dia, ou ambos.
+Eles usam o fuso e os eventos já recebidos pelo aparelho.
+Novos eventos e cancelamentos só chegam quando o celular consegue sincronizar com o criador.
+O Android pode atrasar notificações por economia de bateria. Se não receber, confira as permissões de notificação.
+
+CONFERÊNCIA EM DOIS CELULARES
+
+A descoberta Wi-Fi e as notificações ainda precisam desta conferência prática, pois não havia aparelhos conectados no ambiente de desenvolvimento:
+
+1. Crie o grupo no aparelho A e entre pelo código no B.
+2. Crie um churrasco no B e confira se aparece no A.
+3. No A, altere os pontos do B e confira o placar no B.
+4. Publique uma mensagem e uma foto no B; confira no A.
+5. Renove o código no A. O B deve continuar conectado; um terceiro aparelho precisa do código novo.
+6. Pare a sincronização no A. O B deve mostrar dados salvos e rejeitar novas alterações até reconectar.
+7. Reative a sincronização e confirme a atualização dos dados.
+8. Programe um evento para hoje, mais de 30 minutos à frente e antes das 9h, ou para um dia futuro.
+   Confira os lembretes nas configurações e o recebimento no horário previsto, sujeito ao agendamento do Android.
+9. Feche e abra o aplicativo, verificando que perfil, grupos e publicações foram preservados.
+
+Mais detalhes técnicos e limitações: README.md na pasta do projeto.

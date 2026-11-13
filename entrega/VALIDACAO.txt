@@ -1,0 +1,20 @@
+Rei do Churrasco 2.0-wifi — validação em 10/11/2026
+
+APK: Rei-do-Churrasco-2-WiFi.apk
+Aplicação: com.reidochurrasco.app
+versionCode: 2
+Android mínimo: 8.0 (API 26)
+Compilação e target SDK: 34
+
+Compilação assembleDebug: APROVADA
+Testes JVM: 19 executados, 0 falhas/erros
+Android Lint: 0 erros; 15 avisos não bloqueantes (incluindo versões de dependências, target SDK e pontos documentados de armazenamento/certificado local).
+Assinatura APK: verificada com apksigner, esquema v2, 1 assinante.
+Manifesto e metadados do APK: verificados com aapt.
+Assinatura: debug local, adequada para instalação direta; não é assinatura de publicação na Play Store.
+SHA-256: 880CB2096B2B1B27A1F9EEF3970ADAD9D2D22323F56C3E360A4B80955B5A86F4
+
+Testes de rede usam TCP/TLS reais em loopback, não apenas funções simuladas.
+Não foi realizada instalação em celulares/emulador: não havia dispositivos disponíveis.
+Descoberta UDP em uma rede Wi-Fi física, geração da chave no Android Keystore, telas em execução e entrega de alarmes pelo Android ainda precisam da conferência em aparelhos.
+Roteiro: COMO-USAR.txt.

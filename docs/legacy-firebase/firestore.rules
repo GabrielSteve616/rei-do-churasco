@@ -1,0 +1,35 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isMember(groupId) {
+      return signedIn() && exists(/databases/$(database)/documents/groups/$(groupId)) &&
+        request.auth.uid in get(/databases/$(database)/documents/groups/$(groupId)).data.memberIds;
+    }
+
+    match /users/{userId} {
+      allow create: if signedIn() && request.auth.uid == userId;
+      allow read, update, delete: if signedIn() && request.auth.uid == userId;
+    }
+
+    match /groups/{groupId} {
+      allow create: if signedIn() && request.resource.data.adminUid == request.auth.uid;
+      allow read: if signedIn() && request.auth.uid in resource.data.memberIds;
+      allow update: if signedIn() && (request.auth.uid == resource.data.adminUid || request.auth.uid in resource.data.memberIds);
+      allow delete: if signedIn() && request.auth.uid == resource.data.adminUid;
+    }
+
+    match /groups/{groupId}/events/{eventId} {
+      allow read: if isMember(groupId);
+      allow create, update, delete: if isMember(groupId);
+    }
+
+    match /groups/{groupId}/photos/{photoId} {
+      allow read: if isMember(groupId);
+      allow create, update, delete: if isMember(groupId);
+    }
+  }
+}
