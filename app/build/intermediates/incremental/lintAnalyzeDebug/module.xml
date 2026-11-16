@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="C:\03 - Dados Gabriel\projetos\Projetos-gerais\chu\app"
+    name=":app"
+    type="APP"
+    maven="ReiDoChurrasco:app:unspecified"
+    agpVersion="8.5.1"
+    buildFolder="build"
+    bootClassPath="C:\Walkman-tools\android-sdk\platforms\android-34\android.jar;C:\Walkman-tools\android-sdk\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>
